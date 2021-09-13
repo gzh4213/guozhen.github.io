@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>如何更新本地安装的包 | front-end</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="./public/logo.png">
+    <meta name="description" content="Leo's前端学习文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.3112ee56.css" as="style"><link rel="preload" href="/assets/js/app.48fb5660.js" as="script"><link rel="preload" href="/assets/js/2.efb90c37.js" as="script"><link rel="preload" href="/assets/js/24.6479521b.js" as="script"><link rel="prefetch" href="/assets/js/10.0383fa30.js"><link rel="prefetch" href="/assets/js/11.7da4dd57.js"><link rel="prefetch" href="/assets/js/12.caf422c2.js"><link rel="prefetch" href="/assets/js/13.00c315f3.js"><link rel="prefetch" href="/assets/js/14.6ca44576.js"><link rel="prefetch" href="/assets/js/15.a111f514.js"><link rel="prefetch" href="/assets/js/16.d10fc5d2.js"><link rel="prefetch" href="/assets/js/17.475bb3aa.js"><link rel="prefetch" href="/assets/js/18.de4f3aca.js"><link rel="prefetch" href="/assets/js/19.2d59b6a3.js"><link rel="prefetch" href="/assets/js/20.432e7071.js"><link rel="prefetch" href="/assets/js/21.2c65e7a2.js"><link rel="prefetch" href="/assets/js/22.d42433fd.js"><link rel="prefetch" href="/assets/js/23.39c6a2dc.js"><link rel="prefetch" href="/assets/js/25.0bb28642.js"><link rel="prefetch" href="/assets/js/26.398772c7.js"><link rel="prefetch" href="/assets/js/27.a08183b3.js"><link rel="prefetch" href="/assets/js/28.59a8cad3.js"><link rel="prefetch" href="/assets/js/29.f5eeacce.js"><link rel="prefetch" href="/assets/js/3.210fbec1.js"><link rel="prefetch" href="/assets/js/30.cbb534e5.js"><link rel="prefetch" href="/assets/js/31.07b2fcd7.js"><link rel="prefetch" href="/assets/js/32.1d3e6b4e.js"><link rel="prefetch" href="/assets/js/33.39e8b8ec.js"><link rel="prefetch" href="/assets/js/34.20e64fd5.js"><link rel="prefetch" href="/assets/js/4.4d8f89a8.js"><link rel="prefetch" href="/assets/js/5.d281c2a2.js"><link rel="prefetch" href="/assets/js/6.58cc0ca3.js"><link rel="prefetch" href="/assets/js/7.42120980.js"><link rel="prefetch" href="/assets/js/8.f51ae51c.js"><link rel="prefetch" href="/assets/js/9.699c708a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3112ee56.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="front-end" class="logo"> <span class="site-name can-hide">front-end</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/ts/" class="nav-link">
+  typesript
+</a></div><div class="nav-item"><a href="/data/" class="nav-link">
+  资料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link">
+  React
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/rollup/" class="nav-link">
+  rollup
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="测试" class="dropdown-title"><span class="title">测试</span> <span class="arrow down"></span></button> <button type="button" aria-label="测试" class="mobile-dropdown-title"><span class="title">测试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/test/jest/" class="nav-link">
+  Jest
+</a></li></ul></div></div><div class="nav-item"><a href="/database/" class="nav-link">
+  database
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/npm/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/" class="nav-link">
+  vuepresss
+</a></li></ul></div></div><div class="nav-item"><a href="/tutorial/" class="nav-link">
+  教程
+</a></div><div class="nav-item"><a href="https://github.com/gzh4213" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/ts/" class="nav-link">
+  typesript
+</a></div><div class="nav-item"><a href="/data/" class="nav-link">
+  资料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link">
+  React
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/rollup/" class="nav-link">
+  rollup
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="测试" class="dropdown-title"><span class="title">测试</span> <span class="arrow down"></span></button> <button type="button" aria-label="测试" class="mobile-dropdown-title"><span class="title">测试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/test/jest/" class="nav-link">
+  Jest
+</a></li></ul></div></div><div class="nav-item"><a href="/database/" class="nav-link">
+  database
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/npm/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/" class="nav-link">
+  vuepresss
+</a></li></ul></div></div><div class="nav-item"><a href="/tutorial/" class="nav-link">
+  教程
+</a></div><div class="nav-item"><a href="https://github.com/gzh4213" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="如何更新本地安装的包"><a href="#如何更新本地安装的包" class="header-anchor">#</a> 如何更新本地安装的包</h1> <p>定期更新你的应用所依赖的包（package）是个好习惯。因为依赖包的开发者更新了代码，你的应用也就能够获得提升。</p> <p>为了完成这个任务需要：</p> <p>1.在 <code>package.json</code> 文件所在的目录中执行 <code>npm update</code> 命令。
+2.执行 <code>npm outdated</code> 命令。不应该有任何输出。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">9/13/2021, 1:19:02 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><div></div></div></div>
+    <script src="/assets/js/app.48fb5660.js" defer></script><script src="/assets/js/2.efb90c37.js" defer></script><script src="/assets/js/24.6479521b.js" defer></script>
+  </body>
+</html>
